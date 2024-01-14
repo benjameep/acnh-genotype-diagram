@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Zilla Slab', serif;
-  background-color: #8eff84;
+  background-color: #fff9ec;
 }
 
 main {
@@ -109,3 +109,8 @@ td div {
 .red.buy::after { background-image: url("images/SR.png"); }
 .yellow.buy::after { background-image: url("images/SY.png"); }
 .ticket::after { background-image: url("images/NMT.png"); }
+
+footer {
+  padding-top: 30px;
+  text-align: right;
+}
