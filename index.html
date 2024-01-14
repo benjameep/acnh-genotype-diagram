@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACNH Genotype Diagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+  </head>
+  <body>
+    <main>
+    <h1>Ben's Animal Crossing Genotype Diagram</h1>
+    <h2>Roses</h2>
+    <p>
+      There are 81 possible gene combinations for roses in Animal Crossing New Horizons, 
+      but there are only 8 possible colors of roses. By laying out all of the
+      possible gene combinations in the grid below, we can start to get an idea
+      of which combinations of genes produce which colors.
+    </p>
+    <p>
+      Click on any two roses (or the same rose twice) to highlight their possible
+      offspring, then hover your mouse over the offspring to see their probability.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th colspan="3">rr</th>
+          <th colspan="3">Rr</th>
+          <th colspan="3">RR</th>
+        </tr>
+        <tr>
+          <th colspan="2"></th>
+          <th>SS</th>
+          <th>Ss</th>
+          <th>ss</th>
+
+          <th>SS</th>
+          <th>Ss</th>
+          <th>ss</th>
+          
+          <th>SS</th>
+          <th>Ss</th>
+          <th>ss</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3">WW</th>
+          <th>yy</th>
+          <td><div class="purple">0022</div></td>
+          <td><div class="purple">0021</div></td>
+          <td><div class="purple">0020</div></td>
+
+          <td><div class="purple">1022</div></td>
+          <td><div class="pink">1021</div></td>
+          <td><div class="red">1020</div></td>
+          
+          <td><div class="pink ticket">2022</div></td>
+          <td><div class="red">2021</div></td>
+          <td><div class="black">2020</div></td>
+        </tr>
+        <tr>
+          <th>Yy</th>
+          <td><div class="purple">0122</div></td>
+          <td><div class="purple">0121</div></td>
+          <td><div class="purple">0120</div></td>
+
+          <td><div class="purple">1122</div></td>
+          <td><div class="pink">1121</div></td>
+          <td><div class="red">1120</div></td>
+          
+          <td><div class="purple">2122</div></td>
+          <td><div class="red">2121</div></td>
+          <td><div class="black">2120</div></td>
+        </tr>
+        <tr>
+          <th>YY</th>
+          <td><div class="white">0222</div></td>
+          <td><div class="white">0221</div></td>
+          <td><div class="white">0220</div></td>
+
+          <td><div class="white">1222</div></td>
+          <td><div class="pink">1221</div></td>
+          <td><div class="red">1220</div></td>
+          
+          <td><div class="white">2222</div></td>
+          <td><div class="red">2221</div></td>
+          <td><div class="blue">2220</div></td>
+        </tr>
+
+        <tr>
+          <th rowspan="3">Ww</th>
+          <th>yy</th>
+          <td><div class="white">0012</div></td>
+          <td><div class="white">0011</div></td>
+          <td><div class="white buy">0010</div></td>
+
+          <td><div class="white">1012</div></td>
+          <td><div class="pink">1011</div></td>
+          <td><div class="red">1010</div></td>
+          
+          <td><div class="pink">2012</div></td>
+          <td><div class="red">2011</div></td>
+          <td><div class="black">2010</div></td>
+        </tr>
+        <tr>
+          <th>Yy</th>
+          <td><div class="white">0112</div></td>
+          <td><div class="white">0111</div></td>
+          <td><div class="white">0110</div></td>
+
+          <td><div class="white">1112</div></td>
+          <td><div class="pink">1111</div></td>
+          <td><div class="red">1110</div></td>
+          
+          <td><div class="white">2112</div></td>
+          <td><div class="red">2111</div></td>
+          <td><div class="red">2110</div></td>
+        </tr>
+        <tr>
+          <th>YY</th>
+          <td><div class="yellow">0212</div></td>
+          <td><div class="yellow">0211</div></td>
+          <td><div class="yellow">0210</div></td>
+
+          <td><div class="yellow">1212</div></td>
+          <td><div class="yellow">1211</div></td>
+          <td><div class="orange">1210</div></td>
+          
+          <td><div class="yellow">2212</div></td>
+          <td><div class="orange ticket">2211</div></td>
+          <td><div class="orange">2210</div></td>
+        </tr>
+
+        <tr>
+          <th rowspan="3">ww</th>
+          <th>yy</th>
+          <td><div class="white">0002</div></td>
+          <td><div class="white">0001</div></td>
+          <td><div class="white">0000</div></td>
+
+          <td><div class="white">1002</div></td>
+          <td><div class="pink">1001</div></td>
+          <td><div class="red">1000</div></td>
+          
+          <td><div class="pink">2002</div></td>
+          <td><div class="red buy">2001</div></td>
+          <td><div class="black">2000</div></td>
+        </tr>
+        <tr>
+          <th>Yy</th>
+          <td><div class="yellow">0102</div></td>
+          <td><div class="yellow">0101</div></td>
+          <td><div class="yellow">0100</div></td>
+
+          <td><div class="yellow">1102</div></td>
+          <td><div class="yellow">1101</div></td>
+          <td><div class="orange">1100</div></td>
+          
+          <td><div class="yellow">2102</div></td>
+          <td><div class="orange">2101</div></td>
+          <td><div class="orange">2100</div></td>
+        </tr>
+        <tr>
+          <th>YY</th>
+          <td><div class="yellow">0202</div></td>
+          <td><div class="yellow">0201</div></td>
+          <td><div class="yellow buy">0200</div></td>
+
+          <td><div class="yellow">1202</div></td>
+          <td><div class="yellow">1201</div></td>
+          <td><div class="orange">1200</div></td>
+          
+          <td><div class="yellow">2202</div></td>
+          <td><div class="orange">2201</div></td>
+          <td><div class="orange">2200</div></td>
+        </tr>
+      </tbody>
+    </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

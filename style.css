@@ -1,0 +1,111 @@
+:root {
+  --flower-spacing: 3px;
+  --table-border: 2px solid #093E00;
+}
+
+body {
+  font-family: 'Zilla Slab', serif;
+  background-color: #8eff84;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  user-select: none;
+}
+
+th {
+  font-size: 20px;
+  color: #062700;
+}
+
+thead th { padding-bottom: 10px; }
+tbody th { padding-right: 10px; }
+
+td {
+  background-color: #11cd00;
+}
+
+
+td:nth-of-type(3n) {
+  border-right: var(--table-border);
+  padding-right: var(--flower-spacing);
+}
+td:nth-of-type(3n+1) {
+  border-left: var(--table-border);
+  padding-left: var(--flower-spacing);
+}
+tr:nth-of-type(3n+1) td {
+  border-top: var(--table-border);
+  padding-top: var(--flower-spacing);
+}
+tr:nth-of-type(3n) td {
+  border-bottom: var(--table-border);
+  padding-bottom: var(--flower-spacing);
+}
+
+td div {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  outline: 1.5px solid #093E00;
+  font-size: 14px;
+  margin: var(--flower-spacing);
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.purple { background-color: #AB69FF }
+.red { background-color: #FF4242 }
+.pink { background-color: #FF4FED }
+.white { background-color: white }
+.yellow { background-color: #FBFF39 }
+.blue { background-color: #4844F5 }
+.black { background-color: #545454 }
+.orange { background-color: #FF9430 }
+
+.dim.purple { background-color: #aa69ff60 }
+.dim.red { background-color: #ff424260 }
+.dim.pink { background-color: #FF4FED60 }
+.dim.white { background-color: #FFFFFF60 }
+.dim.yellow { background-color: #FBFF3960 }
+.dim.blue { background-color: #4844F560 }
+.dim.black { background-color: #54545460 }
+.dim.orange { background-color: #FF943060 }
+
+.first_parent, .second_parent {
+  outline-color: blue;
+  outline-width: 4px;
+}
+.first_parent.second_parent {
+  outline-color: red;
+  outline-width: 5px;
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+.buy::after, .ticket::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("images/SW.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+}
+
+.white.buy::after { background-image: url("images/SW.png"); }
+.red.buy::after { background-image: url("images/SR.png"); }
+.yellow.buy::after { background-image: url("images/SY.png"); }
+.ticket::after { background-image: url("images/NMT.png"); }
