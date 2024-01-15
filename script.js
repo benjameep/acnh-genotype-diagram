@@ -62,7 +62,7 @@ function count_percentage(offsprings) {
 
 function compute_offspring(parent1, parent2) {
   var offsprings = ['']
-  for(var i = 0; i < 4; i++) {
+  for(var i = 0; i < parent1.length; i++) {
     options = compute_gene_options(parent1[i], parent2[i])
     offsprings = multiply_gene_options(offsprings, options)
   }

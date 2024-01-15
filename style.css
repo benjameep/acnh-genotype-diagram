@@ -13,6 +13,10 @@ main {
   margin: 0 auto;
 }
 
+menu { padding: 0px; }
+
+menu a { padding-right: 10px; }
+
 table {
   margin-top: 30px;
   border-collapse: collapse;
@@ -69,6 +73,7 @@ td div {
 .blue { background-color: #4844F5 }
 .black { background-color: #545454 }
 .orange { background-color: #FF9430 }
+.green { background-color: #3aff30 }
 
 .dim.purple { background-color: #aa69ff60 }
 .dim.red { background-color: #ff424260 }
@@ -78,6 +83,7 @@ td div {
 .dim.blue { background-color: #4844F560 }
 .dim.black { background-color: #54545460 }
 .dim.orange { background-color: #FF943060 }
+.green { background-color: #3aff3060 }
 
 .first_parent, .second_parent {
   outline-color: blue;
@@ -108,9 +114,12 @@ td div {
 .white.buy::after { background-image: url("images/SW.png"); }
 .red.buy::after { background-image: url("images/SR.png"); }
 .yellow.buy::after { background-image: url("images/SY.png"); }
+.orange.buy::after { background-image: url("images/SO.png"); }
 .ticket::after { background-image: url("images/NMT.png"); }
 
 footer {
   padding-top: 30px;
   text-align: right;
+  max-width: 700px;
+  margin: 0 auto;
 }
