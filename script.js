@@ -124,3 +124,13 @@ $(document).on('keydown', function(e) {
 $(document).click(function(e){
   reset()
 })
+
+// Compute the tier classes
+$('tbody tr').each(function(row_index) {
+  $('td', this).each(function(col_index){
+    var is_middle_rows = Math.floor(row_index / 3) == 1
+    var is_middle_columns = Math.floor(col_index / 3) == 1
+    var tier = 1 + is_middle_columns + is_middle_rows
+    $(this).addClass('tier' + tier)
+  })
+})

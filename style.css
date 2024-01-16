@@ -50,10 +50,10 @@ th {
 thead th { padding-bottom: 5px; }
 tbody th { padding-right: 5px; }
 
-td {
-  background-color: #11cd00;
-}
-
+td { background-color: #11cd00; }
+td.tier3 { background-color: #11cd00; }
+td.tier2 { background-color: #0fb200; }
+td.tier1 { background-color: #0ea200; }
 
 td:nth-of-type(3n) {
   border-right: var(--table-border);
