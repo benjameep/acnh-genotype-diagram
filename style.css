@@ -8,6 +8,25 @@ body {
   background-color: #fff9ec;
 }
 
+.github-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.github-link img {
+  width: 15px;
+  height: 15px;
+  padding-right: 8px;
+}
+
 main {
   max-width: 650px;
   margin: 0 auto;
@@ -18,18 +37,18 @@ menu { padding: 0px; }
 menu a { padding-right: 10px; }
 
 table {
-  margin-top: 30px;
+  margin-top: 25px;
   border-collapse: collapse;
   user-select: none;
 }
 
 th {
-  font-size: 20px;
+  font-size: 14px;
   color: #062700;
 }
 
-thead th { padding-bottom: 10px; }
-tbody th { padding-right: 10px; }
+thead th { padding-bottom: 5px; }
+tbody th { padding-right: 5px; }
 
 td {
   background-color: #11cd00;
@@ -54,12 +73,12 @@ tr:nth-of-type(3n) td {
 }
 
 td div {
-  width: 50px;
-  line-height: 50px;
-  border-radius: 50px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 40px;
   text-align: center;
   outline: 1.5px solid #093E00;
-  font-size: 14px;
+  font-size: 12px;
   margin: var(--flower-spacing);
   letter-spacing: 1.5px;
   position: relative;
@@ -103,8 +122,8 @@ td div {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
   background-image: url("images/SW.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -116,10 +135,3 @@ td div {
 .yellow.buy::after { background-image: url("images/SY.png"); }
 .orange.buy::after { background-image: url("images/SO.png"); }
 .ticket::after { background-image: url("images/NMT.png"); }
-
-footer {
-  padding-top: 30px;
-  text-align: right;
-  max-width: 700px;
-  margin: 0 auto;
-}
