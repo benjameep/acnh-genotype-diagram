@@ -36,6 +36,8 @@ menu { padding: 0px; }
 
 menu a { padding-right: 10px; }
 
+.app { display: flex; }
+
 table {
   margin-top: 25px;
   border-collapse: collapse;
@@ -84,25 +86,25 @@ td div {
   position: relative;
 }
 
-.purple { background-color: #AB69FF }
-.red { background-color: #FF4242 }
-.pink { background-color: #FF4FED }
-.white { background-color: white }
-.yellow { background-color: #FBFF39 }
-.blue { background-color: #4844F5 }
-.black { background-color: #545454 }
-.orange { background-color: #FF9430 }
-.green { background-color: #3aff30 }
+[data-color="purple"] { background-color: #AB69FF }
+[data-color="red"] { background-color: #FF4242 }
+[data-color="pink"] { background-color: #FF4FED }
+[data-color="white"] { background-color: white }
+[data-color="yellow"] { background-color: #FBFF39 }
+[data-color="blue"] { background-color: #4844F5 }
+[data-color="black"] { background-color: #545454 }
+[data-color="orange"] { background-color: #FF9430 }
+[data-color="green"] { background-color: #3aff30 }
 
-.dim.purple { background-color: #aa69ff60 }
-.dim.red { background-color: #ff424260 }
-.dim.pink { background-color: #FF4FED60 }
-.dim.white { background-color: #FFFFFF60 }
-.dim.yellow { background-color: #FBFF3960 }
-.dim.blue { background-color: #4844F560 }
-.dim.black { background-color: #54545460 }
-.dim.orange { background-color: #FF943060 }
-.green { background-color: #3aff3060 }
+.dim[data-color="purple"] { background-color: #aa69ff60 }
+.dim[data-color="red"] { background-color: #ff424260 }
+.dim[data-color="pink"] { background-color: #FF4FED60 }
+.dim[data-color="white"] { background-color: #FFFFFF60 }
+.dim[data-color="yellow"] { background-color: #FBFF3960 }
+.dim[data-color="blue"] { background-color: #4844F560 }
+.dim[data-color="black"] { background-color: #54545460 }
+.dim[data-color="orange"] { background-color: #FF943060 }
+.dim[data-color="green"] { background-color: #3aff3060 }
 
 .first_parent, .second_parent {
   outline-color: blue;
@@ -135,3 +137,33 @@ td div {
 .yellow.buy::after { background-image: url("images/SY.png"); }
 .orange.buy::after { background-image: url("images/SO.png"); }
 .ticket::after { background-image: url("images/NMT.png"); }
+
+.side-info {
+  padding-top: 70px;
+  padding-left: 10px;
+  font-size: 14px;
+  flex-direction: column;
+  color: #062700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-info .parent-name {
+  color: #062700;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 40px;
+  outline: 1.5px solid #093E00;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+.side-info .parent-name:not([data-color]) {
+  background-color: #ebebeb;
+  outline-style: dashed;
+}

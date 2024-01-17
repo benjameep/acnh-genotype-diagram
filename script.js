@@ -1,11 +1,16 @@
 var first_parent = null
 var second_parent = null
+var $first_parent = $('.first_parent_name')
+var $second_parent = $('.second_parent_name')
 var tooltips = {}
 
 function reset(){
   first_parent = null
   second_parent = null
   $('td div').removeClass('first_parent second_parent dim')
+  $('.parent-name')
+    .removeAttr('data-color')
+    .text('')
   for(var tip of Object.values(tooltips)){
     tip.disable()
   }
@@ -104,10 +109,16 @@ $('td').click(function(e) {
   
   if (first_parent == null) {
     first_parent = id
-    get_element(id).addClass('first_parent')
+    var $flower = get_element(id).addClass('first_parent')
+    $first_parent
+      .attr('data-color', $flower.data('color'))
+      .text($flower.text())
   } else if (second_parent == null) {
     second_parent = id
-    get_element(id).addClass('second_parent')
+    var $flower = get_element(id).addClass('second_parent')
+    $second_parent
+      .attr('data-color', $flower.data('color'))
+      .text($flower.text())
     breed()
   }
   e.stopPropagation()
