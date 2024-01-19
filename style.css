@@ -132,10 +132,10 @@ td div {
   background-position: 4px 4px;
 }
 
-.white.buy::after { background-image: url("images/SW.png"); }
-.red.buy::after { background-image: url("images/SR.png"); }
-.yellow.buy::after { background-image: url("images/SY.png"); }
-.orange.buy::after { background-image: url("images/SO.png"); }
+[data-color="white"].buy::after { background-image: url("images/SW.png"); }
+[data-color="red"].buy::after { background-image: url("images/SR.png"); }
+[data-color="yellow"].buy::after { background-image: url("images/SY.png"); }
+[data-color="orange"].buy::after { background-image: url("images/SO.png"); }
 .ticket::after { background-image: url("images/NMT.png"); }
 
 .side-info {
